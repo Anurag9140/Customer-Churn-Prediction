@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import tensorflow as tf
+import tensorflow
 import pickle
 
 
-model = tf.keras.models.load_model("/Users/anuragverma/Desktop/NLP/DL/train_model.h5")
+model = tensorflow.keras.models.load_model("/Users/anuragverma/Desktop/NLP/DL/train_model.h5")
 
 with open("/Users/anuragverma/Desktop/NLP/DL/ohe.pkl", "rb") as f:
     ohe = pickle.load(f)
