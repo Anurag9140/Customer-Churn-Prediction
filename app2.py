@@ -4,15 +4,15 @@ import tensorflow as tf
 import pickle
 
 
-model = tf.keras.models.load_model("/Users/anuragverma/Desktop/NLP/DL/train_model.h5")
+model = tf.keras.models.load_model("train_model.h5")
 
-with open("/Users/anuragverma/Desktop/NLP/DL/ohe.pkl", "rb") as f:
+with open("ohe.pkl", "rb") as f:
     ohe = pickle.load(f)
 
-with open("/Users/anuragverma/Desktop/NLP/DL/label_encoder_gender.pkl", "rb") as f:
+with open("label_encoder_gender.pkl", "rb") as f:
     label_encoder_gender = pickle.load(f)
 
-with open("/Users/anuragverma/Desktop/NLP/DL/scaler.pkl", "rb") as f:
+with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
     
